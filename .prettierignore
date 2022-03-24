@@ -1,0 +1,20 @@
+# Folders
+node_modules
+dist/
+
+# Files
+Dockerfile
+.gitkeep
+.gitignore
+.prettierignore
+.browserslistrc
+.editorconfig
+nginx.conf
+*.yml
+*.svg
+*.png
+*.ico
+*.ttf
+*.eot
+*.woff
+*.woff2
