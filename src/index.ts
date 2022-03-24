@@ -1,3 +1,5 @@
-let hello: string = 'Hello TypeScript';
+import "./datatype";
 
-document.querySelectorAll('.app')[0].innerHTML = hello;
+let hello: string = "Hello TypeScript";
+
+document.querySelectorAll(".app")[0].innerHTML = hello;
