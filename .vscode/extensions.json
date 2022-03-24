@@ -1,0 +1,18 @@
+{
+    "recommendations": [
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "coenraads.bracket-pair-colorizer",
+        "mhutchie.git-graph",
+        "vincaslt.highlight-matching-tag",
+        "shd101wyy.markdown-preview-enhanced",
+        "techer.open-in-browser",
+        "esbenp.prettier-vscode",
+        "ionutvmi.path-autocomplete",
+        "octref.vetur",
+        "vscode-icons-team.vscode-icons",
+        "dotjoshjohnson.xml",
+        "redhat.vscode-yaml",
+        "gruntfuggly.todo-tree"
+    ]
+}
