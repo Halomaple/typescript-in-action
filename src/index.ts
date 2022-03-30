@@ -1,5 +1,6 @@
-import "./datatype";
+import './datatype';
+import './enum';
 
-let hello: string = "Hello TypeScript";
+let hello: string = 'Hello TypeScript';
 
-document.querySelectorAll(".app")[0].innerHTML = hello;
+document.querySelectorAll('.app')[0].innerHTML = hello;
