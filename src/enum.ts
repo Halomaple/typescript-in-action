@@ -58,10 +58,10 @@ let e: E = 3;
 let f: F = 3;
 // console.log(e === f);
 
-let e1: E.a;
+let e1: E.a = 1;
 let e2: E.b;
 // console.log(e1 === e2);
-let e3: E.a;
+let e3: E.a = 1;
 console.log(e1 === e3);
 
 let g1: G = G.b;
