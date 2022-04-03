@@ -1,3 +1,5 @@
+console.log('interface.ts');
+
 interface List {
     readonly id: number;
     name: string;

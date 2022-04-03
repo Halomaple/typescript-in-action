@@ -1,16 +1,16 @@
+console.log('datatype.ts');
 // 原始类型
-
 let bool: boolean = true;
 let num: number = 123;
-let str: string = "abc";
+let str: string = 'abc';
 // str = 123;
 
 // 数组
 let arr1: number[] = [1, 2, 3];
-let arr2: Array<number | string> = [1, 2, 3, "4"];
+let arr2: Array<number | string> = [1, 2, 3, '4'];
 
 // 元组
-let tuple: [number, string] = [0, "1"];
+let tuple: [number, string] = [0, '1'];
 tuple.push(2);
 // tuple[2];
 console.log(tuple);
@@ -39,13 +39,13 @@ let noReturn = () => {};
 void 0;
 (function () {
     var undefined = 0;
-    console.log("undefined is ", undefined);
+    console.log('undefined is ', undefined);
 })();
 
 // any
 let x;
 x = 1;
-x = "2";
+x = '2';
 x = obj;
 x = s1;
 x = un;
@@ -53,7 +53,7 @@ x = () => {};
 
 // never
 let error = () => {
-    throw new Error("error");
+    throw new Error('error');
 };
 let endless = () => {
     while (true) {}
