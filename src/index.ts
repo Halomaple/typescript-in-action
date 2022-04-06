@@ -3,6 +3,7 @@ import './enum';
 import './interface';
 import './interface-function';
 import './function';
+import './class';
 
 let hello: string = 'Hello TypeScript';
 
