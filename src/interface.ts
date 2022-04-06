@@ -1,4 +1,4 @@
-console.log('interface.ts');
+console.log('--------------interface.ts--------------');
 
 interface List {
     readonly id: number;

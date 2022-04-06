@@ -2,6 +2,7 @@ import './datatype';
 import './enum';
 import './interface';
 import './interface-function';
+import './function';
 
 let hello: string = 'Hello TypeScript';
 

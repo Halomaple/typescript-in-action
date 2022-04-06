@@ -1,4 +1,4 @@
-console.log('datatype.ts');
+console.log('--------------datatype.ts--------------');
 // 原始类型
 let bool: boolean = true;
 let num: number = 123;

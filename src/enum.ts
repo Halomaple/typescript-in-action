@@ -1,4 +1,4 @@
-console.log('enum.ts');
+console.log('--------------enum.ts--------------');
 // 数字枚举
 enum Role {
     Reporter = 1,

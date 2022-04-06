@@ -1,4 +1,4 @@
-console.log('interface-fuction.ts');
+console.log('--------------interface-fuction.ts--------------');
 let addNumber: (x: number, y: number) => number;
 
 interface AddNumber {
