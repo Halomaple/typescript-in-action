@@ -6,6 +6,7 @@ import './function';
 import './class';
 import './abstract-class';
 import './class-interface';
+import './generics';
 
 let hello: string = 'Hello TypeScript';
 
