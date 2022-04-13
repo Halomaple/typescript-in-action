@@ -32,15 +32,19 @@ let boy: Boy = {
     cry() {},
 };
 
-class Auto {
-    state = 1;
-    // private state2 = 0; //Class 'ClassC' incorrectly implements interface 'AutoInterface'. Property 'state2' is missing in type 'ClassC' but required in type 'Auto'.
-}
-
-interface AutoInterface extends Auto {}
-
-class ClassC implements AutoInterface {
+class ClassA {
     state = 1;
 }
 
-class Bus extends Auto implements AutoInterface {}
+interface InterfaceA extends ClassA {}
+
+class ClassB implements InterfaceA {
+    state = 1;
+}
+
+// class ClassC implements InterfaceA {
+//     name = 'C';
+// }
+// Class 'ClassC' incorrectly implements interface 'InterfaceA'. Property 'state' is missing in type 'ClassC' but required in type 'ClassA'.
+
+class Bus extends ClassA implements InterfaceA {}
