@@ -5,6 +5,7 @@ import './interface-function';
 import './function';
 import './class';
 import './abstract-class';
+import './class-interface';
 
 let hello: string = 'Hello TypeScript';
 
