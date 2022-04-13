@@ -39,7 +39,7 @@ class ClassA {
 interface InterfaceA extends ClassA {}
 
 class ClassB implements InterfaceA {
-    state = 1;
+    state = 2;
 }
 
 // class ClassC implements InterfaceA {
