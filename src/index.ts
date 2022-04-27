@@ -9,6 +9,7 @@ import './class-interface';
 import './generics';
 import './generics2';
 import './advanced';
+import './advanced2';
 
 let hello: string = 'Hello TypeScript';
 
