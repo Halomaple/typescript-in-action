@@ -123,3 +123,62 @@ function adOverload(a: any, b: any): any {}
 // function adOverload(a: any, b: any, c:any): any {}
 // 此重载签名与其实现签名不兼容。
 // function adOverload(a: any, b: any) {}
+
+//枚举兼容性
+enum AFruit {
+    Apple,
+    Banana,
+}
+enum AColor {
+    Red,
+    Yellow,
+}
+let aFruit: AFruit.Apple = 1;
+let aColor: AColor.Red = 1;
+let aNumber1: number = 1;
+
+aFruit = 1;
+aFruit = aNumber1;
+// aColor = aFruit; //不能将类型“AFruit.Apple”分配给类型“AColor.Red”。
+
+// 类兼容性
+class AClass1 {
+    constructor(p: number, q: number) {}
+    id: number = 1;
+    // private name: string = '';
+}
+class AClass2 {
+    static s = 1;
+    constructor(p: number) {}
+    id: number = 2;
+    // private name: string = '';
+}
+let aa = new AClass1(1, 2);
+let bb = new AClass2(1);
+
+aa = bb;
+bb = aa; // 因为aa和bb都具有实例属性id，构造函数和静态成员不进行比较
+// 如果类中含有私有成员 private name: string = '';，就不能兼容了
+
+class AClass3 extends AClass1 {}
+let cc = new AClass3(1, 2);
+aa = cc;
+cc = aa;
+
+// 范型兼容性
+interface Empty<T> {
+    // value: T
+}
+let aObj1: Empty<number> = {};
+let aObj2: Empty<string> = {};
+aObj1 = aObj2;
+
+let ALog1 = <T>(x: T): T => {
+    console.log(x);
+    return x;
+};
+let ALog2 = <U>(y: U): U => {
+    console.log(y);
+    return y;
+};
+ALog1 = ALog2; // 如果两个范型函数的定义相同，但是没有指定类型参数，也是可以兼容的
