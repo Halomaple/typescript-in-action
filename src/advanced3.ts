@@ -52,12 +52,12 @@ function aGetLanguage(type: AType3, x: string | number) {
 
     // 4. function
     if (isJava(lang)) {
-        lang.helloJava()
-    } else (
+        lang.helloJava();
+    } else {
         lang.helloJavaScript();
-    )
+    }
     return lang;
 }
 
-aGetLanguage(AType3.Strong,1);
-aGetLanguage(AType3.Week,2);
+aGetLanguage(AType3.Strong, 1);
+aGetLanguage(AType3.Week, 2);
