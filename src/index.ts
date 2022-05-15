@@ -10,6 +10,7 @@ import './generics';
 import './generics2';
 import './advanced';
 import './advanced2';
+import './advanced3';
 
 let hello: string = 'Hello TypeScript';
 
