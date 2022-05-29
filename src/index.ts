@@ -11,6 +11,7 @@ import './generics2';
 import './advanced';
 import './advanced2';
 import './advanced3';
+import './advanced-type';
 
 let hello: string = 'Hello TypeScript';
 

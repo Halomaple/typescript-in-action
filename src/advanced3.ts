@@ -37,7 +37,7 @@ function aGetLanguage(type: AType3, x: string | number) {
     }
 
     // 2. in
-    if ('java' in lang) {
+    if ('helloJava' in lang) {
         lang.helloJava();
     } else {
         lang.helloJavaScript();
